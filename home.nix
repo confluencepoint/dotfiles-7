@@ -41,7 +41,7 @@
   };
 
   programs.fish.plugins = [{
-    name = "fzf";
+    name = "fzf.fish";
     src = pkgs.fetchFromGitHub {
       owner = "PatrickF1";
       repo = "https://github.com/PatrickF1/fzf.fish";
