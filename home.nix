@@ -37,34 +37,6 @@
     pkgs.pandoc
   ];
 
-  programs.zoxide = {
-    enable = true;
-    enableFishIntegration = true;
-  };
-
-  # Let Home Manager install and manage itself.
-  programs.home-manager.enable = true;
-
-  programs.git = {
-    enable = true;
-    userName = "Shawn Koh";
-    userEmail = "shawn@shawnkoh.sg";
-    ignores = [
-      ".DS_Store"
-    ];
-  };
-
-  programs.neovim = {
-    enable = true;
-    viAlias = true;
-    vimAlias = true;
-  };
-
-  programs.starship = {
-    enable = true;
-    enableFishIntegration = true;
-  };
-
   programs.fish = {
     enable = true;
     # Temporary workaround
@@ -110,6 +82,34 @@
         '';
       };
     };
+  };
+
+  programs.zoxide = {
+    enable = true;
+    enableFishIntegration = true;
+  };
+
+  # Let Home Manager install and manage itself.
+  programs.home-manager.enable = true;
+
+  programs.git = {
+    enable = true;
+    userName = "Shawn Koh";
+    userEmail = "shawn@shawnkoh.sg";
+    ignores = [
+      ".DS_Store"
+    ];
+  };
+
+  programs.neovim = {
+    enable = true;
+    viAlias = true;
+    vimAlias = true;
+  };
+
+  programs.starship = {
+    enable = true;
+    enableFishIntegration = true;
   };
 
   # programs.fish.plugins = [{
