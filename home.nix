@@ -119,6 +119,10 @@
     enableFishIntegration = true;
   };
 
+  programs.nushell = {
+    enable = true;
+  };
+
   # programs.fish.plugins = [{
   #   name = "fzf.fish";
   #   src = pkgs.fetchFromGitHub {
