@@ -3,21 +3,6 @@
 {
   # Packages that should be installed to the user profile
   home.packages = [
-    pkgs.fish
-    # pretty prompt
-    pkgs.starship
-
-    # git utilities
-    pkgs.git
-    pkgs.git-lfs
-    pkgs.gh
-
-    # shell utilities
-    pkgs.fzf
-    # Replacement for ls
-    pkgs.exa
-    # Replacement for cat
-    pkgs.bat
     pkgs.fd
     pkgs.ripgrep
     pkgs.ripgrep-all
@@ -61,7 +46,6 @@
     shellAliases = {
       cat = "bat";
       cp = "cp -i";
-      ls = "exa";
       mkdir = "mkdir -p";
       mv = "mv -i";
       rm = "rm -i";
@@ -99,6 +83,29 @@
     ignores = [
       ".DS_Store"
     ];
+
+    lfs = {
+      enable = true;
+    };
+  };
+
+  programs.gh = {
+    enable = true;
+  };
+
+  programs.fzf = {
+    enable = true;
+    enableFishIntegration = true;
+  };
+
+  # Replacement for cat
+  programs.bat = {
+    enable = true;
+  };
+
+  programs.exa = {
+    enable = true;
+    enableAliases = true;
   };
 
   programs.neovim = {
