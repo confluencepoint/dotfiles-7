@@ -20,8 +20,4 @@
     userName = "Shawn Koh";
     userEmail = "shawn@shawnkoh.sg";
   }
-
-  programs.git.lfs = {
-    enable = true;
-  }
 }
