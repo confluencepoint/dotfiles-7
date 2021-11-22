@@ -52,6 +52,7 @@
   programs.fish = {
     enable = true;
     # Temporary workaround
+    # https://alexpearce.me/2021/07/managing-dotfiles-with-nix/
     plugins = [
       {
         name = "nix-env";
