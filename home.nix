@@ -40,7 +40,7 @@
     enable = true;
   };
 
-  programs.fish.enable = {
+  programs.fish = {
     enable = true;
   };
 
