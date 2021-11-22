@@ -23,8 +23,7 @@
     pkgs.ripgrep-all
     # Count LoC
     pkgs.tokei
-    # cd with learning abilities
-    pkgs.jump
+    # Replacement for ps
     pkgs.procs
     pkgs.sd
 
@@ -37,6 +36,11 @@
 
     pkgs.pandoc
   ];
+
+  programs.zoxide = {
+    enable = true;
+    enableFishIntegration = true;
+  };
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
