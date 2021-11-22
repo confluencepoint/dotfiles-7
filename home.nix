@@ -25,15 +25,19 @@
     pkgs.tokei
     # cd with learning abilities
     pkgs.jump
+    pkgs.procs
+    pkgs.sd
 
     # shell reference
-    pkgs.tldr
+    pkgs.tealdeer
 
     # Nix language server
     pkgs.rnix-lsp
     pkgs.nixpkgs-fmt
 
     pkgs.pandoc
+
+    pkgs.neovim
   ];
 
   # Let Home Manager install and manage itself.
@@ -81,6 +85,8 @@
       mkdir = "mkdir -p";
       mv = "mv -i";
       rm = "rm -i";
+      ps = "procs";
+      grep = "ripgrep";
     };
 
     functions = {
@@ -90,10 +96,10 @@
       };
       renovate = {
         description = "Rebuild nix home";
-        body = "
-        nix build ~/.config/nixpkgs#homeConfigurations.shawnkoh.activation-script &&
-        ~/.config/nixpkgs/result/activate
-        ";
+        body = ''
+          nix build ~/.config/nixpkgs#homeConfigurations.shawnkoh.activation-script &&
+          ~/.config/nixpkgs/result/activate
+        '';
       };
     };
   };
