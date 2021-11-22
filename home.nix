@@ -51,6 +51,8 @@
 
   programs.fish = {
     enable = true;
+    # Temporary workaround
+    interactiveShellInit = "source ./iterm2/.iterm2_shell_integration";
   };
 
   # programs.fish.plugins = [{
