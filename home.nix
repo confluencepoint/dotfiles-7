@@ -5,6 +5,11 @@
   # paths it should manage.
   home.username = "shawnkoh";
   home.homeDirectory = "/home/shawnkoh";
+  
+  # Packages that should be installed to the user profile
+  home.packages = [
+      pkgs.fzf
+  ]
 
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage
