@@ -14,4 +14,14 @@
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
+
+  programs.git = {
+    enable = true;
+    userName = "Shawn Koh";
+    userEmail = "shawn@shawnkoh.sg";
+  }
+
+  programs.git.lfs = {
+    enable = true;
+  }
 }
