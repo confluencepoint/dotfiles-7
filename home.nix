@@ -19,5 +19,5 @@
     enable = true;
     userName = "Shawn Koh";
     userEmail = "shawn@shawnkoh.sg";
-  }
-};
+  };
+}
