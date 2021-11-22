@@ -24,6 +24,7 @@
     # cd with learning abilities
     pkgs.jump
     pkgs.fish
+    pkgs.starship
   ];
 
   # Let Home Manager install and manage itself.
@@ -33,5 +34,9 @@
     enable = true;
     userName = "Shawn Koh";
     userEmail = "shawn@shawnkoh.sg";
+  };
+
+  programs.starship = {
+    enable = true;
   };
 }
