@@ -32,6 +32,7 @@
     # Nix language server
     pkgs.rnix-lsp
     pkgs.nixpkgs-fmt
+
     pkgs.pandoc
   ];
 
@@ -42,6 +43,9 @@
     enable = true;
     userName = "Shawn Koh";
     userEmail = "shawn@shawnkoh.sg";
+    ignores = [
+      ".DS_Store"
+    ];
   };
 
   programs.starship = {
@@ -69,6 +73,22 @@
       }
     ];
     interactiveShellInit = ''iterm2_shell_integration'';
+
+    shellAliases = {
+      cat = "bat";
+      cp = "cp -i";
+      ls = "exa";
+      mkdir = "mkdir -p";
+      mv = "mv -i";
+      rm = "rm -i";
+    };
+
+    functions = {
+      fish_greeting = {
+        description = "Greeting to show when starting a fish shell";
+        body = "";
+      };
+    };
   };
 
   # programs.fish.plugins = [{
