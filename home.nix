@@ -49,3 +49,4 @@
       sha256 = pkgs.lib.fakeSha256;
     };
   }];
+}
