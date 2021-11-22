@@ -18,6 +18,7 @@
     pkgs.tokei
     # Nix language server
     pkgs.rnix-lsp
+    pkgs.nixpkgs-fmt
   ];
 
   # Let Home Manager install and manage itself.
