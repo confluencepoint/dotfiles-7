@@ -36,8 +36,6 @@
     pkgs.nixpkgs-fmt
 
     pkgs.pandoc
-
-    # pkgs.neovim
   ];
 
   # Let Home Manager install and manage itself.
