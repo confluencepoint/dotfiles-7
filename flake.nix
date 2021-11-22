@@ -11,7 +11,7 @@
     homeConfigurations = {
       shawnkoh = inputs.home-manager.lib.homeManagerConfiguration {
         system = "x86_64-darwin";
-        homeDirectory = "/home/shawnkoh";
+        homeDirectory = "/Users/shawnkoh";
         username = "shawnkoh";
         configuration.imports = [ ./home.nix ];
         stateVersion = "21.11";
