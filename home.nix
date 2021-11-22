@@ -37,7 +37,7 @@
 
     pkgs.pandoc
 
-    pkgs.neovim
+    # pkgs.neovim
   ];
 
   # Let Home Manager install and manage itself.
