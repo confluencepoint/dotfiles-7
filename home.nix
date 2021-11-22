@@ -81,6 +81,7 @@
       mkdir = "mkdir -p";
       mv = "mv -i";
       rm = "rm -i";
+      "home build" = "nix build /Users/shawnkoh/.config/nixpkgs#homeConfigurations.shawnkoh.activation-script";
     };
 
     functions = {
