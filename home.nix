@@ -81,13 +81,19 @@
       mkdir = "mkdir -p";
       mv = "mv -i";
       rm = "rm -i";
-      "home build" = "nix build /Users/shawnkoh/.config/nixpkgs#homeConfigurations.shawnkoh.activation-script";
     };
 
     functions = {
       fish_greeting = {
         description = "Greeting to show when starting a fish shell";
         body = "";
+      };
+      home = {
+        description = "Rebuild nix home";
+        body = "
+        nix build ~/.config/nixpkgs#homeConfigurations.shawnkoh.activation-script &&
+        ~/.config/nixpkgs/result/activate
+        ";
       };
     };
   };
