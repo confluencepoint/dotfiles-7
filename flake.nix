@@ -10,7 +10,7 @@
   outputs = inputs: {
     homeConfigurations = {
       shawnkoh = inputs.home-manager.lib.homeManagerConfiguration {
-        system = "x86_64-linux";
+        system = "x86_64-darwin";
         homeDirectory = "/home/shawnkoh";
         username = "shawnkoh";
         configuration.imports = [ ./home.nix ];
