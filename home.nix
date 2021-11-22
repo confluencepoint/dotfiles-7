@@ -88,7 +88,7 @@
         description = "Greeting to show when starting a fish shell";
         body = "";
       };
-      home = {
+      renovate = {
         description = "Rebuild nix home";
         body = "
         nix build ~/.config/nixpkgs#homeConfigurations.shawnkoh.activation-script &&
