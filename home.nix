@@ -90,7 +90,7 @@
       mv = "mv -i";
       rm = "rm -i";
       ps = "procs";
-      grep = "ripgrep";
+      grep = "rg";
     };
 
     functions = {
