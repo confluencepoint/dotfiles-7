@@ -39,4 +39,13 @@
   programs.starship = {
     enable = true;
   };
-}
+
+  programs.fish.plugins = [{
+    name = "fzf";
+    src = pkgs.fetchFromGitHub {
+      owner = "PatrickF1";
+      repo = "https://github.com/PatrickF1/fzf.fish";
+      rev = "176c8465b0fad2d5c30aacafff6eb5accb7e3826";
+      sha256 = pkgs.lib.fakeSha256;
+    };
+  }];
