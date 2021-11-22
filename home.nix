@@ -4,6 +4,10 @@
   # Packages that should be installed to the user profile
   home.packages = [
       pkgs.fzf
+      pkgs.bat
+      pkgs.fd
+      pkgs.ripgrep
+      pkgs.tldr
   ];
 
   # Let Home Manager install and manage itself.
