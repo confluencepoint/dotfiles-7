@@ -3,28 +3,36 @@
 {
   # Packages that should be installed to the user profile
   home.packages = [
+    pkgs.fish
+    # pretty prompt
+    pkgs.starship
+
+    # git utilities
+    pkgs.git
+    pkgs.git-lfs
+    pkgs.gh
+
+    # shell utilities
+    pkgs.fzf
     # Replacement for ls
     pkgs.exa
-    pkgs.fzf
     # Replacement for cat
     pkgs.bat
     pkgs.fd
     pkgs.ripgrep
     pkgs.ripgrep-all
-    pkgs.gh
-    pkgs.git
-    pkgs.git-lfs
-    pkgs.tldr
     # Count LoC
     pkgs.tokei
+    # cd with learning abilities
+    pkgs.jump
+
+    # shell reference
+    pkgs.tldr
+
     # Nix language server
     pkgs.rnix-lsp
     pkgs.nixpkgs-fmt
     pkgs.pandoc
-    # cd with learning abilities
-    pkgs.jump
-    pkgs.fish
-    pkgs.starship
   ];
 
   # Let Home Manager install and manage itself.
