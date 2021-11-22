@@ -52,7 +52,13 @@
   programs.fish = {
     enable = true;
     # Temporary workaround
-    interactiveShellInit = "source ./iterm2/.iterm2_shell_integration";
+    plugins = [
+      {
+        name = "iterm2-shell-integration";
+        src = ./config/fish/iterm2_shell_integration;
+      }
+    ];
+    interactiveShellInit = ''iterm2_shell_integration'';
   };
 
   # programs.fish.plugins = [{
