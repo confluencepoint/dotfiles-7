@@ -3,13 +3,20 @@
 {
   # Packages that should be installed to the user profile
   home.packages = [
+      pkgs.ls
       pkgs.fzf
       pkgs.bat
       pkgs.fd
       pkgs.ripgrep
-      pkgs.tldr
+      pkgs.ripgrep-all
       pkgs.gh
+      pkgs.git
       pkgs.git-lfs
+      pkgs.tldr
+      # Count LoC
+      pkgs.tokei
+      # Nix language server
+      pkgs.rnix-lsp
   ];
 
   # Let Home Manager install and manage itself.
