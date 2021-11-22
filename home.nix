@@ -8,6 +8,8 @@
       pkgs.fd
       pkgs.ripgrep
       pkgs.tldr
+      pkgs.gh
+      pkgs.git-lfs
   ];
 
   # Let Home Manager install and manage itself.
