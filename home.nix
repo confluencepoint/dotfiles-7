@@ -50,7 +50,6 @@
       mv = "mv -i";
       rm = "rm -i";
       ps = "procs";
-      grep = "rg";
     };
 
     functions = {
@@ -103,6 +102,7 @@
     enable = true;
   };
 
+  # Replacement for ls
   programs.exa = {
     enable = true;
     enableAliases = true;
