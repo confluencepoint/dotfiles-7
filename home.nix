@@ -6,6 +6,7 @@
     # Replacement for ls
     pkgs.exa
     pkgs.fzf
+    # Replacement for cat
     pkgs.bat
     pkgs.fd
     pkgs.ripgrep
@@ -19,6 +20,9 @@
     # Nix language server
     pkgs.rnix-lsp
     pkgs.nixpkgs-fmt
+    pkgs.pandoc
+    # cd with learning abilities
+    pkgs.jump
   ];
 
   # Let Home Manager install and manage itself.
