@@ -23,6 +23,7 @@
     pkgs.pandoc
     # cd with learning abilities
     pkgs.jump
+    pkgs.fish
   ];
 
   # Let Home Manager install and manage itself.
