@@ -20,6 +20,8 @@
     pkgs.nixpkgs-fmt
 
     pkgs.pandoc
+
+    pkgs.bat-extras
   ];
 
   programs.fish = {
@@ -67,13 +69,14 @@
     };
   };
 
+  # Let Home Manager install and manage itself.
+  programs.home-manager.enable = true;
+
+  # Intelligent cd.
   programs.zoxide = {
     enable = true;
     enableFishIntegration = true;
   };
-
-  # Let Home Manager install and manage itself.
-  programs.home-manager.enable = true;
 
   programs.git = {
     enable = true;
@@ -88,10 +91,12 @@
     };
   };
 
+  # Github CLI
   programs.gh = {
     enable = true;
   };
 
+  # Pipeable fuzzy search
   programs.fzf = {
     enable = true;
     enableFishIntegration = true;
@@ -108,6 +113,7 @@
     enableAliases = true;
   };
 
+  # Replacement for vim
   programs.neovim = {
     enable = true;
     viAlias = true;
