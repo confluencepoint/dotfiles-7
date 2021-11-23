@@ -32,7 +32,7 @@
     # Rust
     pkgs.rustfmt
     # Web
-    pkgs.nodePackages.prettier
+    # pkgs.nodePackages.prettier
   ];
 
   programs.fish = {
