@@ -118,14 +118,4 @@
     enable = true;
     enableFishIntegration = true;
   };
-
-  # programs.fish.plugins = [{
-  #   name = "fzf.fish";
-  #   src = pkgs.fetchFromGitHub {
-  #     owner = "PatrickF1";
-  #     repo = "fzf.fish";
-  #     rev = "176c8465b0fad2d5c30aacafff6eb5accb7e3826";
-  #     sha256 = "sha256-qQ+mQQsPH9WvdgmLVoY6w+pYUyk062BKPxvKbr93rZo=";
-  #   };
-  # }];
 }
