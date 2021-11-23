@@ -24,6 +24,8 @@
     pkgs.bat-extras.batdiff
     pkgs.bat-extras.batgrep
     pkgs.bat-extras.batman
+    # Unable to install due to libcxx being marked as broken.
+    # TODO: Revisit this after installing nix-darwin
     # pkgs.bat-extras.prettybat
 
     # Code Formatters to support prettybat
