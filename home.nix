@@ -21,7 +21,18 @@
 
     pkgs.pandoc
 
-    pkgs.bat-extras
+    pkgs.bat-extras.batdiff
+    pkgs.bat-extras.batgrep
+    pkgs.bat-extras.batman
+    pkgs.bat-extras.prettybat
+
+    # Code Formatters to support prettybat
+    # Python
+    pkgs.black
+    # Rust
+    pkgs.rustfmt
+    # Web
+    pkgs.prettier
   ];
 
   programs.fish = {
