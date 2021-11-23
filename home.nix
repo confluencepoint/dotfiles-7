@@ -28,9 +28,9 @@
 
     # Code Formatters to support prettybat
     # Python
-    pkgs.black
+    # pkgs.black
     # Rust
-    pkgs.rustfmt
+    # pkgs.rustfmt
     # Web
     # pkgs.nodePackages.prettier
   ];
