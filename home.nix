@@ -24,7 +24,7 @@
     pkgs.bat-extras.batdiff
     pkgs.bat-extras.batgrep
     pkgs.bat-extras.batman
-    pkgs.bat-extras.prettybat
+    # pkgs.bat-extras.prettybat
 
     # Code Formatters to support prettybat
     # Python
