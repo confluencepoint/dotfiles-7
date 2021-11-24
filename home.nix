@@ -121,6 +121,9 @@
   # Github CLI
   programs.gh = {
     enable = true;
+    settings = {
+      git_protocol = "ssh";
+    };
   };
 
   # Pipeable fuzzy search
