@@ -97,11 +97,7 @@
 
   programs.ssh = {
     enable = true;
-    extraConfig = "
-      AddKeysToAgent yes
-      UseKeyChain yes
-      IdentityFile ~/.ssh/id_ed25519
-    ";
+    extraConfig = "AddKeysToAgent yes\nUseKeyChain yes\nIdentityFile ~/.ssh/id_ed25519";
   };
 
   programs.git = {
