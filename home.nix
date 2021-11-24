@@ -91,6 +91,10 @@
     enableFishIntegration = true;
   };
 
+  programs.gpg = {
+    enable = true;
+  };
+
   programs.git = {
     enable = true;
     userName = "Shawn Koh";
@@ -101,6 +105,11 @@
 
     lfs = {
       enable = true;
+    };
+
+    signing = {
+      key = null;
+      signByDefault = true;
     };
   };
 
