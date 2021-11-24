@@ -95,6 +95,10 @@
     enable = true;
   };
 
+  programs.ssh = {
+    enable = true;
+  };
+
   programs.git = {
     enable = true;
     userName = "Shawn Koh";
