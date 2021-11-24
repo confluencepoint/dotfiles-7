@@ -37,6 +37,10 @@
     # pkgs.nodePackages.prettier
   ];
 
+  home.shellAliases = {
+    SOURCEGRAPH_VERSION = "v3.34.1";
+  };
+
   programs.fish = {
     enable = true;
     # Temporary workaround
