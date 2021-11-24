@@ -37,7 +37,7 @@
     # pkgs.nodePackages.prettier
   ];
 
-  home.shellAliases = {
+  home.sessionVariables = {
     SOURCEGRAPH_VERSION = "v3.34.1";
   };
 
