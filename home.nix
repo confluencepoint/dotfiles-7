@@ -35,6 +35,8 @@
     # pkgs.rustfmt
     # Web
     # pkgs.nodePackages.prettier
+
+    pkgs.gh
   ];
 
   home.sessionVariables = {
@@ -123,14 +125,15 @@
   };
 
   # Github CLI
-  programs.gh = {
-    enable = true;
-    # settings = {
-    #   git_protocol = "ssh";
-    #   prompt = "enabled";
-    # };
-  };
+  # programs.gh = {
+  # enable = true;
+  # settings = {
+  #   git_protocol = "ssh";
+  #   prompt = "enabled";
+  # };
+  # };
   # https://github.com/nix-community/home-manager/pull/1211
+  # https://discourse.nixos.org/t/how-do-you-organize-your-configuration/7306/10
   home.file.".config/gh/config.yml".source = config.lib.file.mkOutOfStoreSymlink ./config/gh/config.yml;
 
   # Pipeable fuzzy search
