@@ -125,16 +125,9 @@
   };
 
   # Github CLI
-  # programs.gh = {
-  # enable = true;
-  # settings = {
-  #   git_protocol = "ssh";
-  #   prompt = "enabled";
-  # };
-  # };
   # https://github.com/nix-community/home-manager/pull/1211
   # https://discourse.nixos.org/t/how-do-you-organize-your-configuration/7306/10
-  home.file.".config/gh/config.yml".source = config.lib.file.mkOutOfStoreSymlink ./config/gh/config.yml;
+  xdg.configFile."gh/config.yml".source = config.lib.file.mkOutOfStoreSymlink ./config/gh/config.yml;
 
   # Pipeable fuzzy search
   programs.fzf = {
