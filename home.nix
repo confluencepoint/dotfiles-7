@@ -125,11 +125,13 @@
   # Github CLI
   programs.gh = {
     enable = true;
-    settings = {
-      git_protocol = "ssh";
-      prompt = "enabled";
-    };
+    # settings = {
+    #   git_protocol = "ssh";
+    #   prompt = "enabled";
+    # };
   };
+  # https://github.com/nix-community/home-manager/pull/1211
+  home.file.".config/gh/config.yml".source = config.lib.file.mkOutOfStoreSymlink ./config/gh/config.yml;
 
   # Pipeable fuzzy search
   programs.fzf = {
