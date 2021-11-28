@@ -133,7 +133,7 @@
   # Requires adjusting the default config file location
   # See https://github.com/Hammerspoon/hammerspoon/pull/582
   # TODO: Implement this defaults write in nix-darwin
-  xdg.configFile."hammerspoon/init.lua".source = config.lib.file.mkOutOfStoreSymlink ./config/hammerspoon/init.lua;
+  xdg.configFile."hammerspoon".source = config.lib.file.mkOutOfStoreSymlink ./config/hammerspoon;
 
   # Pipeable fuzzy search
   programs.fzf = {
