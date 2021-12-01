@@ -20,6 +20,7 @@ end
 chromeWatcher = hs.window.filter.new("Google Chrome")
 chromeWatcher:subscribe(hs.window.filter.windowCreated, chromeWatcherCallback)
 
+
 -- close spotify window when unfocused
 function closeSpotifyCallback(window, appName, event)
     window:close()
@@ -52,6 +53,17 @@ ankiWatcher = hs.window.filter.new("Anki")
 ankiWatcher:subscribe(hs.window.filter.windowUnfocused, function (window, appName, event)
     window:minimize()
 end)
+
+function closeUnfocusedWindows()
+    focusedWindow = hs.window.focusedWindow()
+    for key, window in pairs(focusedWindow:application():allWindows()) do
+        if window ~= focusedWindow then
+            window:close()
+        end
+    end
+end
+
+hs.hotkey.bind(hyperkey, "k", closeUnfocusedWindows)
 
 
 -- TODO: automatically close chrome windows that are not visible for the last 10 minutes.
